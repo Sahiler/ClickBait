@@ -1,0 +1,24 @@
+---
+title: "RClickbait"
+author: "Sahil Rangwala"
+date: "5-6-2017"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The RClickbait package performs basic on analysis on based on articles and their titles to determine whether or not 
+articles are clickbait using a combination of factors. Using a combination of sentiment analysis, title/article similarity, and common regular expressions, the RClickbait package will generate scores rating how "clickbaity" and article is. The higher the score, the more "clickbaity" the article will tend to be.
+
+##The Determine Score Function
+
+The determine score function of the RClickbait package will read a data frame of articles containing the article text and title, and will score the articles based on these two factors. Note that to use this function, the data frame must have two variables labeled text and title. Let's look at the data set of CNN Scores we have:
+
+```{r}
+data("cnn_articles", package = "RClickbait")
+knitr::kable(head(cnn_articles[3:ncol(cnn_articles)],1))
+```
+
+The loaded data frame already has 

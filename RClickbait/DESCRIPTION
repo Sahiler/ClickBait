@@ -1,0 +1,30 @@
+Package: RClickbait
+Type: Package
+Title: A simple implementation of Clickbait analysis
+Version: 0.1.0
+Authors@R: as.person(c(
+   "Tony Shen <tonys2@illinois.edu> [aut,cre]”,
+   "Jose Zavala <jjzaval2@illinois.edu> [aut]",
+   "Andrew Tom <attom2@illinois.edu> [aut]",
+   "Qianyu Sun <qsun16@illinois.edu> [aut]",
+   "Sahil Rangwala <sdr2@illinois.edu> [aut,cre]”))
+Description: A simple attempt at trying to understand and score "clickbait"
+    articles. Using multiple factors of clickbait, RClickbait will try to generate 
+    a score based on the sentiment of the article, the similarity between the 
+    title and the article, and the similarity of the title with other generally
+    "clickbait" articles.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports: RCurl, ggplot2, RSentiment, tm, shiny, grid, gridExtra
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2017-05-07 21:50:27 UTC; Tony
+Author: Sahil Rangwala [aut, cre], 
+  Tony Shen [aut, cre],
+  Jose Zavala [aut],
+  Andrew Tom [aut],
+  Qianyu Sun [aut]
+Maintainer: Tony Shen <tonys2@illinois.edu>, Sahil Rangwala <sdr2@illinois.edu>
